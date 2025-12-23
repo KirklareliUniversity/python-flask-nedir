@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Yazı tipi */
+    background-color: #f8f9fa;  /* Arka plan rengi */
+    color: #343a40; /* Metin rengi */
+    margin: 0;
+    display: flex; /* Ortalamak için */
+    justify-content: center; /* Yatay ortalama */
+    align-items: flex-start; /* Yukarıdan hizalama */
+    padding-top: 60px;  /* Üst boşluk */
+    min-height: 100vh; /* Tam ekran yükseklik */
+}
+
+.container {
+    background-color: #ffffff; /* Beyaz kutu */
+    padding: 40px 50px; /* İç boşluk */
+    border-radius: 10px;  /* Köşe yuvarlatma */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  /* Hafif gölge */
+    width: 100%;
+    max-width: 600px;  /* En fazla genişlik */
+}
+
+h1 {
+    color: #343a40; /* Başlık rengi */
+    text-align: center; /* Ortalı */
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e9ecef;  /* Alt çizgi */
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #6c757d; /* Açık gri başlık */
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex; /* Yan yana input + buton */
+    gap: 10px; /* Aralarındaki boşluk */
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex-grow: 1; /* Input genişlesin */
+    padding: 12px;
+    border: 1px solid #ced4da; /* Çerçeve rengi */
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Hover/focus animasyon */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Focus rengi */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;  /* Mavi buton */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Koyu mavi hover */
+}
+
+.task-list {
+    list-style: none; /* Noktalı liste kaldır */
+    padding: 0;
+}
+
+.task-item {
+    background-color: #ffffff; /* Her görev kartı */
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    display: flex; /* Görev + butonlar yan yana */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9ecef; /* İnce gri çerçeve */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);  /* Hafif gölge */
+    transition: transform 0.2s; /* Hover animasyonu */
+}
+
+.task-item:hover {
+    transform: translateY(-2px);  /* Hafif yukarı kalkma efekti */
+}
+
+.task-item span {
+    font-size: 1rem;
+    color: #343a40; /* Görev yazısı rengi */
+}
+
+.actions a {
+    text-decoration: none; /* Alt çizgi yok */
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s; /* Hover animasyonu */
+}
+
+.actions a {
+    color: #dc3545; /* Kırmızı yazı */
+    border: 1px solid #dc3545; /* Kırmızı çerçeve */
+}
+
+.actions a:hover {
+    background-color: #dc3545; /* Kırmızı arka plan */
+    color: white; /* Beyaz yazı */
+}
